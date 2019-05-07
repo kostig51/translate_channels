@@ -1,18 +1,15 @@
 <template>
-    <div class="modal modal-fill fade" data-backdrop="false" id="modal-add-channel" tabindex="-1">
+    <div class="modal modal-fill fade" data-backdrop="false" id="modal-channel" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">Добавление нового канала</h5>
+
                     <button type="button" class="close" data-dismiss="modal">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Добавить выход для канала</h3>
-                    </div>
-                    <!-- /.box-header -->
                     <!-- form start -->
                     <div class="box-body">
                         <div class="form-group" :class="">
@@ -48,15 +45,6 @@
             return {
                 url: '',
                 bandwidth: 3000,
-                output: {
-                    name: '',
-                    description: '',
-                    pnr: 0,
-                    pushes: []
-                },
-                push: {
-                    url: ''
-                }
             }
         },
         methods: {
