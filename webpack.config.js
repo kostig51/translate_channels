@@ -77,7 +77,8 @@ if (process.env.NODE_ENV === 'production') {
             $: 'jquery',
             jquery: 'jquery',
             'window.jQuery': 'jquery',
-            jQuery: 'jquery'
+            jQuery: 'jquery',
+            Popper: ['popper.js', 'default']
         })
     ])
 } else {
@@ -86,7 +87,8 @@ if (process.env.NODE_ENV === 'production') {
             $: 'jquery',
             jquery: 'jquery',
             'window.jQuery': 'jquery',
-            jQuery: 'jquery'
+            jQuery: 'jquery',
+            Popper: ['popper.js', 'default']
         })
     ])
 }
